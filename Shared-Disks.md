@@ -1,9 +1,12 @@
 # Shared Disk
 
->[!note]
->A shared disk is a disk that can be accesed by the network.
->
->The disk is usually stored in a NAS, and can be accesed from an other device: TV, laptop, phone, IoT, etc...
+Windows/MacOS
+
+### What is a Shared Disk ?
+
+A shared disk is a disk that can be accesed by the network.
+
+The disk is usually stored in a NAS, and can be accesed from an other device: TV, laptop, phone, IoT, etc...
 
 ## Windows 10
 
