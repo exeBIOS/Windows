@@ -9,10 +9,10 @@
 
 ## 💿 Windows 10
 
-「💾」[Shared Disk](Shared-Disks.md)
+- [Shared Disk](Shared-Disks.md)
 
 ## 💽 Windows Server 2022
 
-「🔍」[DHCP](DHCP.md)
+- [DHCP](DHCP.md)
 
-「📒」[IPAM](IPAM.md)
+- [IPAM](IPAM.md)
