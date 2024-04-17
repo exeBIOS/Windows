@@ -14,7 +14,7 @@ If you want to configure a shared disk on your network using windows 10, [Click 
 
 ### Step 1
 
-Click the `startup/windows` logo button or the `magnifying glass` located at the **bottom left** of your screen.
+Click the `startup/windows` logo button or the `magnifying glass` located at the **bottom left** of your screen [ ⊞ ].
 
 ### Step 2 
 
