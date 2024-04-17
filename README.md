@@ -1,2 +1,2 @@
 # Windows
-This repository contains information about windows client/server and there services.
+This repository contains information about windows client/server and theire services.
