@@ -1,2 +1,4 @@
 # Windows
-This repository contains information about windows client/server and theire services.
+- 🔐 Windows 11
+- 💿 Windows 10
+- 💽 Windows Server 2022
