@@ -39,3 +39,7 @@ In the **Folder** section, enter the **drives path**, example: `\\server\share`.
 ### Step 6
 
 Click the `Finish` button located at the **bottom right hand corner** of the **Map Network Drive** window.
+
+## MacOS
+
+Coming soon...
