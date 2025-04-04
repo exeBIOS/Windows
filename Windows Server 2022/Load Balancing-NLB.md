@@ -183,4 +183,3 @@ Sur LON-DC1, actualise http://LON-NLB 20 fois et vérifie que seul le site de LO
 ✅ Vérification de la répartition de charge.
 ✅ Tests de tolérance aux pannes et de haute disponibilité.
 
-Tout est prêt et fonctionnel ! 🎉 Dis-moi si tu veux que j'affine certaines étapes. 🚀
