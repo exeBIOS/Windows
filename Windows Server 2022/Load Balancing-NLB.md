@@ -177,7 +177,7 @@ Sur LON-SVR2, fais Contrôle de l'hôte → Drainstop dans Gestionnaire de l'éq
 Sur LON-DC1, actualise http://LON-NLB 20 fois et vérifie que seul le site de LON-SVR1 s'affiche.
 
 🎯 📌 Récapitulatif
-✅ Installation de l'équilibrage de charge.
+✅ Installation de l'équilibrage de charge. 
 ✅ Création du cluster et ajout des hôtes.
 ✅ Configuration des règles de ports et de l'affinité.
 ✅ Vérification de la répartition de charge.
