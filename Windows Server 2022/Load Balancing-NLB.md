@@ -1,57 +1,58 @@
-📌 💻 Étape 1 : Vérifier le bon fonctionnement des sites web sur les serveurs autonomes
-🔹 Sur LON-SVR1
+# Configure un NLB
+## 📌 💻 Étape 1 : Vérifier le bon fonctionnement des sites web sur les serveurs autonomes
+### 🔹 Sur LON-SVR1
 Ouvre l'Explorateur de fichiers.
 
-Va dans C:\inetpub\wwwroot.
+Va dans `C:\inetpub\wwwroot`.
 
-Double-clique sur iisstart.png pour l'ouvrir avec Paint.
+Double-clique sur **iisstart.png** pour l'ouvrir avec Paint.
 
 Dessine un cercle autour du logo IIS.
 
-Enregistre (CTRL + S) et ferme Paint.
+Enregistre `CTRL` + `S` et ferme Paint.
 
 Ferme l'Explorateur de fichiers.
 
-🔹 Sur LON-DC1
+### 🔹 Sur LON-DC1
 Ouvre Internet Explorer.
 
-Dans la barre d'adresse, tape : http://LON-SVR1 et appuie sur Entrée.
+Dans la barre d'adresse, tape : `http://LON-SVR1` et appuie sur **Entrée**.
 
 Vérifie que la page IIS affiche le logo modifié avec le cercle.
 
-Ensuite, tape http://LON-SVR2 et appuie sur Entrée.
+Ensuite, tape `http://LON-SVR2` et appuie sur **Entrée**.
 
 Vérifie que la page IIS n'a pas le cercle (serveur différent).
 
-📌 💻 Étape 2 : Installation de l'équilibrage de charge réseau (NLB)
+## 📌 💻 Étape 2 : Installation de l'équilibrage de charge réseau (NLB)
 🔹 Sur LON-SVR1 et LON-SVR2
 Ouvre Gestionnaire de serveur.
 
-Clique sur Gérer → Ajouter des rôles et fonctionnalités.
+Clique sur **Gérer** → **Ajouter des rôles et fonctionnalités**.
 
-Dans l'assistant, clique sur Suivant jusqu'à l'étape Rôles de serveurs.
+Dans l'assistant, clique sur **Suivant** jusqu'à l'étape Rôles de serveurs.
 
-Coche Équilibrage de la charge réseau (NLB).
+Coche **Équilibrage de la charge réseau** (NLB).
 
-Clique sur Suivant → Installer et attends la fin de l'installation.
+Clique sur **Suivant** → **Installer** et attends la fin de l'installation.
 
 Redémarre les serveurs si nécessaire.
 
-📌 💻 Étape 3 : Création du cluster NLB
-🔹 Sur LON-SVR1
+## 📌 💻 Étape 3 : Création du cluster NLB
+### 🔹 Sur LON-SVR1
 Ouvre Gestionnaire de serveur.
 
-Va dans Outils → Gestionnaire de l'équilibrage de la charge réseau.
+Va dans **Outils** → **Gestionnaire de l'équilibrage de la charge réseau**.
 
-Dans la fenêtre, clique sur Cluster → Nouveau.
+Dans la fenêtre, clique sur **Cluster** → **Nouveau**.
 
-Dans la case Nom de l'hôte, tape LON-SVR1 et clique sur Se connecter.
+Dans la case Nom de l'hôte, tape `LON-SVR1` et clique sur **Se connecter**.
 
 Sélectionne l'interface réseau (Ethernet ou autre, selon Get-NetAdapter).
 
-Clique sur Suivant.
+Clique sur **Suivant**.
 
-Dans Adresses IP du cluster, clique sur Ajouter.
+Dans Adresses IP du cluster, clique sur **Ajouter**.
 
 Adresse IP : 192.168.161.250
 
@@ -61,15 +62,15 @@ Clique sur OK, puis Suivant.
 
 Dans Paramètres du cluster :
 
-Nom complet d'Internet : LON-NLB.
+Nom complet d'Internet : `LON-NLB`.
 
-Mode d'opération : Multidiffusion.
+Mode d'opération : **Multidiffusion**.
 
-Clique sur Suivant.
+Clique sur **Suivant**.
 
-Dans Règles de port, laisse tout par défaut et clique sur Terminer.
+Dans Règles de port, laisse tout par défaut et clique sur **Terminer**.
 
-📌 💻 Étape 4 : Ajouter un deuxième hôte au cluster
+## 📌 💻 Étape 4 : Ajouter un deuxième hôte au cluster
 🔹 Sur LON-SVR1
 Dans Gestionnaire de l'équilibrage de la charge réseau, clique sur LON-NLB (192.168.161.250).
 
