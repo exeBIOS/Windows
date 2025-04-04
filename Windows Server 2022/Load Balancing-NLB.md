@@ -3,7 +3,10 @@
 ### 🔹 Sur LON-SVR1
 Ouvre l'Explorateur de fichiers.
 
-Va dans `C:\inetpub\wwwroot`.
+Va dans: 
+```
+C:\inetpub\wwwroot
+```
 
 Double-clique sur **iisstart.png** pour l'ouvrir avec Paint.
 
@@ -16,11 +19,19 @@ Ferme l'Explorateur de fichiers.
 ### 🔹 Sur LON-DC1
 Ouvre Internet Explorer.
 
-Dans la barre d'adresse, tape : `http://LON-SVR1` et appuie sur **Entrée**.
+Dans la barre d'adresse, tape : 
+```
+http://LON-SVR1
+``` 
+et appuie sur **Entrée**.
 
 Vérifie que la page IIS affiche le logo modifié avec le cercle.
 
-Ensuite, tape `http://LON-SVR2` et appuie sur **Entrée**.
+Ensuite, tape :
+```
+http://LON-SVR2
+``` 
+et appuie sur **Entrée**.
 
 Vérifie que la page IIS n'a pas le cercle (serveur différent).
 
@@ -46,7 +57,11 @@ Va dans **Outils** → **Gestionnaire de l'équilibrage de la charge réseau**.
 
 Dans la fenêtre, clique sur **Cluster** → **Nouveau**.
 
-Dans la case Nom de l'hôte, tape `LON-SVR1` et clique sur **Se connecter**.
+Dans la case Nom de l'hôte, tape:
+```
+LON-SVR1
+```  
+et clique sur **Se connecter**.
 
 Sélectionne l'interface réseau (Ethernet ou autre, selon Get-NetAdapter).
 
